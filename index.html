@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radosław Witkowicz - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Nawigacja -->
+    <header>
+        <nav>
+            <button class="tablink" onclick="openSection('home', this, '#02735e')" id="defaultOpen">Strona główna</button>
+            <button class="tablink" onclick="openSection('cv', this, '#02735e')">CV</button>
+            <button class="tablink" id="projects-header" onclick="openSection('projects', this, '#02735e')">Moje projekty</button>
+            <button class="tablink" id="about-header" onclick="openSection('about', this, '#02735e')">A oprócz pracy?</button>
+            <button class="tablink" id="contact-header" onclick="openSection('contact', this, '#02735e')" id="last">Kontakt</button>
+        </nav>
+    </header>
+
+    <div class="kontener">
+        <!-- Sekcje treści -->
+        <div id="home" class="tabcontent">
+            <div class="intro">
+                <div class="photo">
+                    <img src="Grafiki/foto.jpg" alt="Moje zdjęcie" />
+                </div>
+                <div class="intro-text">
+                    <h2>Witaj, jestem <br>
+                        <h1>
+                            <bolder>Radosław Witkowicz</bolder>
+                        </h1>
+                    </h2>
+                    <p id="welcome">
+                        Masz przed sobą moje internetowe portfolio! <br> Możesz tutaj poznać moje pomysły, doświadczenie, CV, ale co najważniejsze - po prostu mnie!
+                        <hr>
+                        <strong style="font-size: 25px">POZNAJMY SIĘ!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cv" class="tabcontent">
+
+            <div class="cv-section" data-side="left">
+                <h2>Student Informatyki (Algorytmika i programowanie)</h2>
+                <hr>
+                <p class="bold">Jestem studentem Informatyki na Uniwersytecie Ekonomicznym w Katowicach, gdzie pogłębiam swoją wiedzę i umiejętności w dziedzinie nowoczesnych technologii informatycznych. W trakcie studiów zdobywam doświadczenie w zakresie programowania,
+                    tworzenia, wdrażania i ulepszania oprogramowania oraz zarządzania projektami IT. </p>
+                <p>Miałem okazję pracować z najnowszymi narzędziami i technologiami, co pozwoliło mi nie tylko na rozwijanie umiejętności technicznych, ale także na zrozumienie kluczowych aspektów biznesowych branży IT.</p>
+                <div class="typewriter-wrapper">
+                    <p class="typewriter-text"> Z dużym zaangażowaniem podchodzę do zdobywania wiedzy oraz doskonalenia praktycznych umiejętności, co pozwala mi na rozwój w kierunku stania się kompetentnym i wszechstronnym specjalistą w dziedzinie informatyki.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cv-section education-section" data-side="right">
+                <h2>Wykształcenie</h2>
+                <div class="education-card">
+                    <h3>Szkoła średnia</h3>
+                    <div class="blur">
+                        <h4>Wrzesień 2019 - Kwiecień 2022</h4>
+                        <p class="bold">I Liceum Ogólnokształcące im. Tadeusza Kościuszki w Mysłowicach</p>
+                        <p>Profil matematyczno-chemiczno-informatyczny</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <h3>Studia I stopnia (licencjat)</h3>
+                    <div class="blur">
+                        <h4>Październik 2022 - obecnie</h4>
+                        <p class="bold">Uniwersytet Ekonomiczny w Katowicach</p>
+                        <p>Kierunek: Informatyka (Algorytmika i programowanie)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cv-section" data-side="left">
+                <h2>Doświadczenie Zawodowe</h2>
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Kelner</h2>
+                            <h3>Maj - Wrzesień 2021</h3>
+                            <h4>Hotele Diament</h4>
+                            <div class="description">
+                                Moja pierwsza poważna praca polegała głównie na obsłudze Gości, przyjmowaniu zamówień, przygotowywaniu sali i dbałości o wszystkie życzenia Gości oraz współpracy z kuchnią.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Recepcjonista</h2>
+                            <h3>Maj - Wrzesień 2022</h3>
+                            <h4>Hotele Diament</h4>
+                            <div class="description">
+                                Jako recepcjonista byłem odpowiedzialny za przyjmowanie Gości, obsługę systemów hotelowych i kontrolowanie sprawnego działania Hotelu
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Asystent ds. wsparcia technicznego</h2>
+                            <h3>Marzec - Czerwiec 2024</h3>
+                            <h4>Capgemini</h4>
+                            <div class="description">
+                                Jako asystent ds. wsparcia technicznego na Service Desk IT byłem odpowiedzialny za obsługiwanie 1. linii wsparcia użytkowników i rozwiązywanie wszelkich problemów przez nich zgłaszanych
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>???</h2>
+                            <h3>Sierpień 2024 - obecnie</h3>
+                            <h4>PMS Labs</h4>
+                            <div class="description">
+                                Podczas tej pracy biorę udział w tworzeniu, ulepszaniu i wdrażaniu innowacyjnego systemu hotelowego
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sekcja z umiejętnościami miękkimi -->
+            <div class="cv-section soft-skills-section" data-side="right">
+                <h2>Umiejętności miękkie</h2>
+                <ul class="soft-skills-list">
+                    <li class="soft-skill">⭐ Kreatywny</li>
+                    <li class="soft-skill">⭐ Ambitny</li>
+                    <li class="soft-skill">⭐ Dobrze działam pod presją czasu</li>
+                    <li class="soft-skill">⭐ Komunikatywny</li>
+                    <li class="soft-skill">⭐ Otwarty na nową wiedzę</li>
+                    <li class="soft-skill">⭐ Szybko przyswajam nowe informacje</li>
+                </ul>
+            </div>
+
+            <div class="cv-section" data-side="left">
+                <h2>Umiejętności</h2>
+                <div class="skill" data-progress="80">
+                    <span>Python</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 80%;"></div>
+                    </div>
+                    <p>Zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="70">
+                    <span>C#</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 70%;"></div>
+                    </div>
+                    <p>Średnio zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="60">
+                    <span>C / C++</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 60%;"></div>
+                    </div>
+                    <p>Średnio zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="40">
+                    <span>JAVA</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 40%;"></div>
+                    </div>
+                    <p>Podstawowy</p>
+                </div>
+                <div class="skill" data-progress="80">
+                    <span>HTML / CSS / JS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 80%;"></div>
+                    </div>
+                    <p>Zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="50">
+                    <span>SQL</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 50%;"></div>
+                    </div>
+                    <p>Podstawowy</p>
+                </div>
+                <div class="skill" data-progress="90">
+                    <span>Microsoft Office</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 90%;"></div>
+                    </div>
+                    <p>Zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="80">
+                    <span>Metodyka SCRUM</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 80%;"></div>
+                    </div>
+                    <p>Zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="40">
+                    <span>Testowanie i optymalizacja kodu</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 40%;"></div>
+                    </div>
+                    <p>Podstawowy</p>
+                </div>
+                <div class="skill" data-progress="50">
+                    <span>Uczenie maszynowe</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 50%;"></div>
+                    </div>
+                    <p>Podstawowy</p>
+                </div>
+                <div class="skill" data-progress="80">
+                    <span>Znajomość systemów hotelowych</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 80%;"></div>
+                    </div>
+                    <p>Zaawansowany</p>
+                </div>
+                <div class="skill" data-progress="90">
+                    <span>Wsparcie IT</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 70%;"></div>
+                    </div>
+                    <p>Średnio zaawansowany</p>
+                </div>
+            </div>
+
+            <div class="cv-section" data-side="right">
+                <h2>Języki Obce</h2>
+                <div class="languages">
+
+                    <div class="language">
+
+                        <div class="circular-progress">
+                            <span class="progress-value_number" style="visibility: hidden;">
+                                85%
+                            </span>
+
+                            <span class="progress-value">
+                                <div class="language-icon">
+                                    <img src="Grafiki/anglia.jpg" alt="Angielski">
+                                </div>
+                            </span>
+                            <svg>
+                        <circle cx="95" cy="87.5" r="80"></circle>
+                        <circle cx="95" cy="87.5" r="80"></circle>
+                      </svg>
+                        </div>
+                        <h4>Angielski</h4>
+                        <h3>B2+ / C1</h3>
+                    </div>
+
+                    <div class="language">
+
+                        <div class="circular-progress">
+                            <span class="progress-value_number" style="visibility: hidden;">
+                                40%
+                            </span>
+                            <span class="progress-value">
+                                <div class="language-icon">
+                                    <img src="Grafiki/niemcy.jpg" alt="Niemiecki">
+                                </div>
+                            </span>
+                            <svg>
+                        <circle cx="95" cy="87.5" r="80"></circle>
+                        <circle cx="95" cy="87.5" r="80"></circle>
+                      </svg>
+                        </div>
+                        <h4>Niemiecki</h4>
+                        <h3>A2+</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-section" data-side="left">
+                <h2>Szkolenia / Certyfikaty</h2>
+                <div class="certificates-container">
+                    <div class="certificates">
+                        <div class="certificate-card">
+                            <div class="certificate-front">
+                                <h3>Make Basics, Foundation</h3>
+                                <img src="Grafiki/make.jpg" alt="Make">
+                            </div>
+                            <div class="certificate-back">
+                                <p>Certyfikaty Make Basics i Make Foundation potwierdzają kompleksową znajomość platformy Make w zakresie tworzenia i zarządzania automatyzacjami procesów. W ramach Make Basics zdobyłem umiejętności konfigurowania podstawowych
+                                    integracji, mapowania danych oraz debugowania scenariuszy. Make Foundation rozszerzył moją wiedzę o zaawansowane techniki, takie jak stosowanie filtrów, pętli, funkcji warunkowych oraz pracy z API, co pozwala na tworzenie
+                                    złożonych i wydajnych automatyzacji dostosowanych do potrzeb biznesowych.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificate-card">
+                            <div class="certificate-front">
+                                <h3>AWS Academy Graduate</h3>
+                                <img src="Grafiki/aws.jpg" alt="AWS">
+                            </div>
+                            <div class="certificate-back">
+                                <p>Certyfikat AWS Academy Graduate potwierdza zaawansowaną znajomość usług i narzędzi chmurowych Amazon Web Services (AWS). W ramach kursu zdobyłem umiejętności projektowania, wdrażania oraz zarządzania infrastrukturą chmurową,
+                                    z naciskiem na bezpieczeństwo, skalowalność i optymalizację kosztów. Kurs obejmował praktyczne zastosowanie takich usług jak EC2, S3, RDS, oraz VPC, a także podstawy automatyzacji z użyciem narzędzi DevOps.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificate-card">
+                            <div class="certificate-front">
+                                <h3>Szkoła Biznes Planu</h3>
+                                <img src="Grafiki/apkademia.png" alt="Apkademia">
+                            </div>
+                            <div class="certificate-back">
+                                <p>Certyfikat Szkoły Biznes Planu od Apkademii potwierdza praktyczną wiedzę i umiejętności w zakresie tworzenia kompleksowego biznesplanu. W ramach kursu nauczyłem się, jak skutecznie analizować rynek, definiować grupę docelową,
+                                    opracowywać strategie marketingowe oraz planować finanse i koszty operacyjne. Certyfikat świadczy o mojej zdolności do tworzenia realistycznych i zrównoważonych planów biznesowych, które stanowią solidną podstawę dla
+                                    uruchomienia i prowadzenia własnej działalności gospodarczej.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificate-card">
+                            <div class="certificate-front">
+                                <h3>Szkoła Aplikacji Mobilnych</h3>
+                                <img src="Grafiki/apkademia.png" alt="Apkademia">
+                            </div>
+                            <div class="certificate-back">
+                                <p>Certyfikat Szkoły Aplikacji Mobilnych od Apkademii potwierdza wiedzę i umiejętności w zakresie tworzenia i komercjalizacji aplikacji mobilnych oraz stron internetowych. W trakcie kursu nauczyłem się przede wszystkim strategii
+                                    zarabiania na aplikacjach, pozyskiwania inwestorów oraz skutecznej współpracy z nimi. Zdobyłem również umiejętność tworzenia profesjonalnych dokumentów, takich jak dokumentacje techniczne i prezentacje, które mogę wykorzystać
+                                    w pracy dla klientów.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="projects-tab">
+            <div id="projects" class="tabcontent">
+                <div class="projects-section">
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="1">
+                            <img src="Grafiki/carsy.png" alt="Carsy">
+                            <img src="Grafiki/carsy2.png" alt="Carsy">
+                            <h3>CARSY</h3>
+                            <h4>Strona internetowa</h4>
+                        </div>
+
+                        <div class="project-card" data-project="2">
+                            <img src="Grafiki/skaner.jpg" alt="Skaner języka migowego">
+                            <h3>Skaner języka migowego</h3>
+                            <h4>Python, Machine Learning</h4>
+                        </div>
+
+                        <div class="project-card" data-project="3">
+                            <img src="Grafiki/trainly.png" alt="Trainly">
+                            <img src="Grafiki/trainly2.png" alt="Trainly">
+                            <h3>Trainly - Twój kalendarz treningowy</h3>
+                            <h4>Aplikacja internetowa</h4>
+                        </div>
+                    </div>
+
+                    <!-- Modal Popups -->
+
+                    <div id="modal-project-1" class="project-modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Carsy - strona dla mechanika</h2>
+                            <video controls width="100%" height="auto">
+                                <source src="Grafiki/carsy_film.mp4" type="video/mp4">
+                                Błąd podczas odtwarzania filmu
+                            </video>
+                            <p>Prosta aplikacja stworzona dla mechanika i jego klientów służąca do komunikacji warsztatu z jego klientami<br>Strona stworzona jako projekt na studiach, dlatego też nie hostujemy API do obsługi strony, więc link prowadzi do
+                                strony, która jedynie wygląda, ale nie łączy się z bazą danych</p>
+                            <a class="git" href="https://github.com/ziebamikolaj/carsy" target="_blank">GitHub</a>
+                            <a class="site" href="https://carsy-tau.vercel.app/" target="_blank">Zobacz stronę</a>
+                        </div>
+                    </div>
+
+                    <div id="modal-project-2" class="project-modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Skaner języka migowego</h2>
+                            <video controls width="100%" height="auto">
+                                <source src="Grafiki/skaner_film.mp4" type="video/mp4">
+                                Błąd podczas odtwarzania filmu
+                            </video>
+                            <p>Prosta aplikacja, która rozpoznaje poszczególne litery pokazywane w polskim języku migowym.<br>Została napisana w Pythonie i wykorzystuje uczenie maszynowe i trenowanie modelu na podstawie zdjęć wygenerowanych w pierwszej części
+                                działania skanera.<br>Skaner wykrywa dłoń na ekranie, oznacza ją kolorową ramką, a następnie obok ramki opisuje rozpoznaną literę w czasie rzeczywistym. <br>Planuję ulepszyć skaner, aby było możliwe napisanie zdania literując
+                                i wyświetlenie zdania na ekranie.</p>
+                            <a class="git" href="https://github.com/Radzio310/Sign-language-scanner" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div id="modal-project-3" class="project-modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Trainly - Twój kalendarz treningowy</h2>
+                            <video controls width="100%" height="auto">
+                                <source src="Grafiki/trainly_film.mp4" type="video/mp4">
+                                Błąd podczas odtwarzania filmu
+                            </video>
+                            <p>Trainly to aplikacja do zarządzania treningami, która pomoże Ci w planowaniu i monitorowaniu swoich treningów i osiągów.
+                                <br>Trainly oferuje wiele przydatnych funkcji, dzięki którym będziesz mógł/a efektywnie organizować swoje treningi i osiągać zamierzone cele. Aplikacja pozwala na tworzenie planów treningowych, dodawanie ćwiczeń, śledzenie
+                                postępów oraz analizowanie wyników.<br>Po bardziej szczegółowy opis zapraszam na GitHub (link poniżej)</p>
+                            <a class="git" href="https://github.com/Radzio310/Trainly_your_training" target="_blank">GitHub</a>
+                            <a class="site" href="https://trainly.com.pl" target="_blank">Zobacz stronę</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="tabcontent">
+            <div class="hobbies-section">
+                <div class="hobby-card">
+                    <img src="Grafiki/sedzia.jpg" alt="Sędziowanie piłki ręcznej">
+                    <h2>Sędzia piłki ręcznej</h2>
+                    <p>Jestem aktywnym sędzią, zarówno piłki ręcznej, jak i piłki ręcznej plażowej, gdzie mogę realizować swoje zamiłowanie do sportu, jak i rozwijać się z roku na rok mierząc się z coraz to nowymi wyzwaniami.<br>Dzięki sędziowaniu poznaję
+                        również wiele nowych osób i miejsc na terenie całego kraju</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="Grafiki/oaza.jpg" alt="Grupy młodzieżowe Oaza">
+                    <h2>Animator oazowy</h2>
+                    <p>Od 2017 roku należę do młodzieżowej grupy o nazwie Ruch Światło-Życie (potocznie Oaza), w której od 2022 roku jestem animatorem. <br>Prowadzę spotkania w grupach, przygotowuję aktywności i jestem odpowiedzialny za młodych ludzi należących
+                        do mojej grupy</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="Grafiki/sport.jpg" alt="Wszechstronny sportowiec">
+                    <h2>Wszechstronny sportowiec</h2>
+                    <p>Z zamiłowaniem uprawiam wiele sportów, szczególnie piłkę nożną, jednak nie zamykam się na żadne nowe sporty. <br>Najnowszym odkryciem dla mnie jest squash i dart</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="Grafiki/smieszek.jpg" alt="Zakręcony śmieszek">
+                    <h2>Zakręcony śmieszek</h2>
+                    <p>Moje poczucie humoru znajduje ujście praktycznie wszędzie<br>Każdą sytuację w życiu potrafię zobaczyć przez różowe okulary i obrócić w zabawną historię do opowiedzenia na imprezę ;)</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="Grafiki/remont.jpg" alt="Majster od remontu">
+                    <h2>Majster remontowy</h2>
+                    <p>Coraz częściej mam okazję pomagać w remontach, przebudowach i poważnych porządkach. <br>Najbardziej lubię patrzeć na efekt końcowy i czuć, że jest to efekt pracy moich własnych rąk</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="Grafiki/muzyk.jpg" alt="Muzyk amator">
+                    <h2>Muzyk amator</h2>
+                    <p>Bardzo lubię słuchać muzyki i poznawać nowe brzmienia. <br>Nierzadko próbuję swoich sił śpiewając i uczę się grać na instrumentach tj. pianino, cajon czy kazoo</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact" class="tabcontent">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="tel:+48662471178">
+                        <img src="Grafiki/phone.png" alt="Telefon">
+                        <p>+48 662 471 178</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:witkowiczradoslaw@gmail.com">
+                        <img src="Grafiki/mail.jpg" alt="Mail">
+                        <p>witkowiczradoslaw@gmail.com</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.facebook.com/radek.witkowicz.9" target="_blank">
+                        <img src="Grafiki/facebook.png" alt="Facebook">
+                        <p>Facebook - Radek Witkowicz</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/rados%C5%82aw-witkowicz-b5b965289/" target="_blank">
+                        <img src="Grafiki/linkedin.png" alt="LinkedIn">
+                        <p>LinkedIn - Radosław Witkowicz</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
